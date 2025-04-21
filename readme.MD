@@ -238,7 +238,3 @@ pnpm dev
 - Image modal uses `fixed` and `flex` to center preview. Large vertical images are now scrollable for better UX.
 
 ---
-
-```
-
-```
