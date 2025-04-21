@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@auth/core':
     specifier: ^0.39.0
@@ -25,7 +21,7 @@ dependencies:
     version: 3.787.0
   '@cloudflare/workers-types':
     specifier: latest
-    version: 4.20250420.0
+    version: 4.20250421.0
   '@electric-sql/pglite':
     specifier: latest
     version: 0.2.17
@@ -184,7 +180,7 @@ dependencies:
     version: 16.5.0
   drizzle-orm:
     specifier: ^0.42.0
-    version: 0.42.0(@aws-sdk/client-rds-data@3.787.0)(@cloudflare/workers-types@4.20250420.0)(@electric-sql/pglite@0.2.17)(@libsql/client-wasm@0.15.4)(@libsql/client@0.15.4)(@neondatabase/serverless@1.0.0)(@op-engineering/op-sqlite@12.0.2)(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@prisma/client@6.6.0)(@tidbcloud/serverless@0.2.0)(@types/better-sqlite3@7.6.13)(@types/pg@8.11.13)(@types/sql.js@1.4.9)(@vercel/postgres@0.10.0)(@xata.io/client@0.30.1)(better-sqlite3@11.9.1)(bun-types@1.2.10)(expo-sqlite@15.1.4)(gel@2.0.2)(knex@3.1.0)(kysely@0.28.1)(mysql2@3.14.0)(pg@8.14.1)(postgres@3.4.5)(sql.js@1.13.0)(sqlite3@5.1.7)
+    version: 0.42.0(@aws-sdk/client-rds-data@3.787.0)(@cloudflare/workers-types@4.20250421.0)(@electric-sql/pglite@0.2.17)(@libsql/client-wasm@0.15.4)(@libsql/client@0.15.4)(@neondatabase/serverless@1.0.0)(@op-engineering/op-sqlite@12.0.2)(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@prisma/client@6.6.0)(@tidbcloud/serverless@0.2.0)(@types/better-sqlite3@7.6.13)(@types/pg@8.11.13)(@types/sql.js@1.4.9)(@vercel/postgres@0.10.0)(@xata.io/client@0.30.1)(better-sqlite3@11.9.1)(bun-types@1.2.10)(expo-sqlite@15.1.4)(gel@2.0.2)(knex@3.1.0)(kysely@0.28.1)(mysql2@3.14.0)(pg@8.14.1)(postgres@3.4.5)(sql.js@1.13.0)(sqlite3@5.1.7)
   embla-carousel-react:
     specifier: 8.5.1
     version: 8.5.1(react@19.1.0)
@@ -2492,8 +2488,8 @@ packages:
       '@babel/helper-validator-identifier': 7.25.9
     dev: false
 
-  /@cloudflare/workers-types@4.20250420.0:
-    resolution: {integrity: sha512-TFpHBfr9b2nscTDNPCnIJQZWqkraeM6QQksFZz/ZCGO8Q72NpOEtUkkXBn4rVGzh5YB+b9tYkeOMELBUJbg1HA==}
+  /@cloudflare/workers-types@4.20250421.0:
+    resolution: {integrity: sha512-GYSmQxF9ZE2kkmjCSiYTFdcXUHPeBrz9XvKhqGLTKT8ITYxN5kXy9OYlpkhtVWWUE+XNq7qm5uSKwluaOBKoAw==}
     dev: false
 
   /@drizzle-team/brocli@0.10.2:
@@ -7442,7 +7438,7 @@ packages:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.42.0(@aws-sdk/client-rds-data@3.787.0)(@cloudflare/workers-types@4.20250420.0)(@electric-sql/pglite@0.2.17)(@libsql/client-wasm@0.15.4)(@libsql/client@0.15.4)(@neondatabase/serverless@1.0.0)(@op-engineering/op-sqlite@12.0.2)(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@prisma/client@6.6.0)(@tidbcloud/serverless@0.2.0)(@types/better-sqlite3@7.6.13)(@types/pg@8.11.13)(@types/sql.js@1.4.9)(@vercel/postgres@0.10.0)(@xata.io/client@0.30.1)(better-sqlite3@11.9.1)(bun-types@1.2.10)(expo-sqlite@15.1.4)(gel@2.0.2)(knex@3.1.0)(kysely@0.28.1)(mysql2@3.14.0)(pg@8.14.1)(postgres@3.4.5)(sql.js@1.13.0)(sqlite3@5.1.7):
+  /drizzle-orm@0.42.0(@aws-sdk/client-rds-data@3.787.0)(@cloudflare/workers-types@4.20250421.0)(@electric-sql/pglite@0.2.17)(@libsql/client-wasm@0.15.4)(@libsql/client@0.15.4)(@neondatabase/serverless@1.0.0)(@op-engineering/op-sqlite@12.0.2)(@opentelemetry/api@1.9.0)(@planetscale/database@1.19.0)(@prisma/client@6.6.0)(@tidbcloud/serverless@0.2.0)(@types/better-sqlite3@7.6.13)(@types/pg@8.11.13)(@types/sql.js@1.4.9)(@vercel/postgres@0.10.0)(@xata.io/client@0.30.1)(better-sqlite3@11.9.1)(bun-types@1.2.10)(expo-sqlite@15.1.4)(gel@2.0.2)(knex@3.1.0)(kysely@0.28.1)(mysql2@3.14.0)(pg@8.14.1)(postgres@3.4.5)(sql.js@1.13.0)(sqlite3@5.1.7):
     resolution: {integrity: sha512-pS8nNJm2kBNZwrOjTHJfdKkaU+KuUQmV/vk5D57NojDq4FG+0uAYGMulXtYT///HfgsMF0hnFFvu1ezI3OwOkg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -7532,7 +7528,7 @@ packages:
         optional: true
     dependencies:
       '@aws-sdk/client-rds-data': 3.787.0
-      '@cloudflare/workers-types': 4.20250420.0
+      '@cloudflare/workers-types': 4.20250421.0
       '@electric-sql/pglite': 0.2.17
       '@libsql/client': 0.15.4
       '@libsql/client-wasm': 0.15.4
@@ -11649,7 +11645,6 @@ packages:
 
   /sudo-prompt@9.1.1:
     resolution: {integrity: sha512-es33J1g2HjMpyAhz8lOR+ICmXXAqTuKbuXuUWLhOLew20oN9oUCgCJx615U/v7aioZg7IX5lIh9x34vwneu4pA==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dev: false
 
   /supports-color@5.5.0:
@@ -12374,3 +12369,7 @@ packages:
   /zod@3.24.3:
     resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

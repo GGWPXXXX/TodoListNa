@@ -9,7 +9,8 @@ import type { Todo } from "@/lib/types";
 import { Loader2, Plus, Trash, Upload } from "lucide-react";
 import type React from "react";
 import { useState } from "react";
-import "react-image-lightbox/style.css";
+import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "./ui/toast";
 
 interface TodoListProps {
   initialTodos: Todo[];
@@ -21,6 +22,7 @@ export default function TodoList({ initialTodos }: TodoListProps) {
   const [file, setFile] = useState<File | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const { toast } = useToast();
 
   const handleImageClick = (imageUrl: string) => {
     setSelectedImage(imageUrl);
@@ -33,6 +35,17 @@ export default function TodoList({ initialTodos }: TodoListProps) {
   const handleAddTodo = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTodo.trim()) return;
+
+    // Check if the file size is under the limit (e.g., 1 MB)
+    if (file && file.size > 1 * 1024 * 1024) {
+      // 1 MB limit
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "File size exceeds the 1 MB limit.",
+      });
+      return;
+    }
 
     setIsLoading(true);
     try {
@@ -52,8 +65,17 @@ export default function TodoList({ initialTodos }: TodoListProps) {
 
       setNewTodo("");
       setFile(null);
+      toast({
+        title: "Todo created!",
+        description: "Your task was added successfully.",
+      });
     } catch (error) {
       console.error("Failed to add todo:", error);
+      toast({
+        variant: "destructive",
+        title: "Failed to add todo",
+        description: "Something went wrong. Please try again.",
+      });
     } finally {
       setIsLoading(false);
     }
